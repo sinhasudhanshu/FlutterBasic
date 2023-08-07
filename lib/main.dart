@@ -1,36 +1,24 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(FirstApp());
+  runApp(
+   MaterialApp(
+     home: Scaffold(
+       backgroundColor: Colors.blueAccent,
+       appBar: AppBar(
+         centerTitle: true,
+         title: const Text("Hello Flutter from Flutter"),
+         backgroundColor: Colors.blueGrey,
+       ),
+       body:const Center(child: Image(
+         image: NetworkImage(
+             "https://3.bp.blogspot.com/-py5FbTZgvjo/YDi1bsQq16I/AAAAAAAACB0/BxejbJBcHA4AVfkB33WYC3YlVmxElM7BwCK4BGAYYCw/s1600/Varanasi%2BSoftware%2BJunction%2BPhone%2BLogo.png"),
+       ),
+       ),
+     ),
+   ),
+
+  );
 }
 
-class FirstApp extends StatelessWidget {
-  const FirstApp({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("AppBar"),
-
-      ),
-      body: Text("ayush"),
-    );
-  }
-}
