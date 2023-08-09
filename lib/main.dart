@@ -10,15 +10,14 @@ void main() {
         appBar: AppBar(
 
           centerTitle: true,
-          title:  Text("Varanasi Software Junction"),
+          title:  const Text("Flutter App Adding image"),
           backgroundColor: Colors.blueGrey,
         ),
 
         body:
 
-        Center(child: Image(
-          image: NetworkImage(
-              "https://images.pexels.com/photos/5077039/pexels-photo-5077039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+        const Center(child: Image(
+          image: AssetImage("images/abc.png"),
         ),
         ),
       ),
