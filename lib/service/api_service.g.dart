@@ -13,7 +13,7 @@ class _ApiService implements ApiService {
     this._dio, {
     this.baseUrl,
   }) {
-    baseUrl ??= 'https://jsonplaceholder.typicode.com/posts';
+    baseUrl ??= 'https://jsonplaceholder.typicode.com/';
   }
 
   final Dio _dio;
